@@ -1,0 +1,10 @@
+﻿@model DrawCards
+
+<h2>Card Deck</h2>
+@foreach (Card c in Model.cards)
+{
+    <p>@c.suit</p>
+    <p>@c.value</p>
+    <img src="@c.image" />
+
+}
